@@ -5,8 +5,12 @@ import Connexion from './components/Connexion';
 import Introuvable from './components/Introuvable';
 import Inscription from './components/Inscription';
 import Navigation from './components/Navigation';
+import Profil from './components/Profil';
+
+
 function App() {
   return (
+    <div>
     <BrowserRouter>
     <Navigation />
     <Switch>
@@ -15,6 +19,9 @@ function App() {
 
     </Switch>
     </BrowserRouter>
+    <Profil />
+    </div>
+    
   );
 }
 

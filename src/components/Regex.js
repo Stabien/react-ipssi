@@ -3,4 +3,4 @@ export const validEmail = new RegExp(
 );
  export const validPassword = new RegExp('^(?=.*?[A-Za-z])(?=.*?[0-9]).{6,}$');
 
- export const validTelephone = new RegExp('^(?:\+|0)\s*[1-9](?:[\s.-]*\d{2}){4}$')
+ /*export const validTelephone = new RegExp('^(?:\+|0)\s*[1-9](?:[\s.-]*\d{2}){4}$');*/

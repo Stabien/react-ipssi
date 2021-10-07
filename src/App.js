@@ -6,7 +6,7 @@ import Introuvable from './components/Introuvable';
 import Inscription from './components/Inscription';
 import Navigation from './components/Navigation';
 import Profil from './components/Profil';
-
+import ExpenseTable from "./components/ExpenseTable";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
     <Switch>
     <Route path="/Connexion" exact component={ Connexion } />
     <Route path="/Inscription" exact component={ Inscription } />
-
     </Switch>
+      <Route path="/tableau-de-bord" exact component={ ExpenseTable } />
     </BrowserRouter>
     <Profil />
     </div>

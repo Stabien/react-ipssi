@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.Inscription{
+    margin-top: 15%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border: solid 2px;
+    border-color: #A9E9FF;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    border-radius: 5px;
+}
+.in{
+    margin-top: 25px;
+    border: solid 1px;
+    border-radius: 4px;
+}
+
+.but{
+    background-color: white;
+    color: black;
+    border: solid 1px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 900;
+    margin-top: 25px;
+    width: 100px;
+    height: 40px;
+    transition: 0s;
+}

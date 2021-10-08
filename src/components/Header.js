@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/Header.css';
 import { useState } from "react"
+import {NavLink} from "react-router-dom";
 
 
 function Header() {
@@ -15,24 +16,24 @@ function Header() {
             <div className=".navbar-logo">Logo</div>
             <ul className="navbar-links">
                 <li className="navbar-item slideInDown-1">
-                    <a href="#home" className="navbar-link">
+                    <NavLink exact to="./dashboard" className="navbar-link">
                         Accueil
-                    </a>
+                    </NavLink>
                 </li>
                 <li className="navbar-item slideInDown-2">
-                    <a href="#home" className="navbar-link">
-                        Mes Depenses
-                    </a>
+                    <NavLink exact to="./--" className="navbar-link">
+                        Mes Dépenses
+                    </NavLink>
                 </li>
                 <li className="navbar-item slideInDown-3">
-                    <a href="#home" className="navbar-link">
-                        Gestion
-                    </a>
+                    <NavLink exact to="./--" className="navbar-link">
+                       Gestion
+                    </NavLink>
                 </li>
                 <li className="navbar-item slideInDown-4">
-                    <a href="#home" className="navbar-link">
-                        Mon Profil
-                    </a>
+                    <NavLink exact to="./mon-profil" className="navbar-link">
+                        Mon profil
+                    </NavLink>
                 </li>
             </ul>
             <button className="navbar-burger" onClick={handleShowLinks}>

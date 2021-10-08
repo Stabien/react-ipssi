@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { useState } from 'react';
 import Navigation from './Navigation';
 import '../styles/Inscription.css';
@@ -65,23 +65,27 @@ const Inscription = () => {
 
 
     return (
-        <div className="Inscription" style={{height: height}}>
-            <h1>S'inscrire</h1>
-            <form action="Post" className="Formulaire_Inscription">
-                
-                <input type="text" placeholder="Votre Nom" value={ nameSize } onChange={(e) => tailleNom(e.target.value)} className="in"></input><br/>
-                {nameErr && <p className='texterreur'>Your Name is invalid</p>}
-                <input type="text" placeholder="Votre Prénom" value={ surnameSize } onChange={(e) => tailleSurname(e.target.value)}className="in"></input><br/>
-                {surnameErr && <p className='texterreur'>Your Name is invalid</p>}
-                <input type="text" placeholder="Votre Téléphone" className="in"></input><br/>
-                <input type="text" placeholder="Votre Mail" value={ email } onChange={(e) => setEmail(e.target.value)} className="in"></input><br/>
-                {emailErr && <p className='texterreur'>Your email is invalid</p>}
-                <input type="text" placeholder="Votre Mot de passe" className="in" value={ password } onChange={(e) => setPassword(e.target.value)}></input><br/>
-                {pwdError && <p className='texterreur'>Your password is invalid</p>}
-                <button type="button" onClick= { validate } className="in but">Inscription</button>
+        <>
+            <Navigation />
+            <div className="Inscription" style={{height: height}}>
+                <h1>S'inscrire</h1>
+                <form action="Post" className="Formulaire_Inscription">
 
-            </form>
-        </div>
+                    <input type="text" placeholder="Votre Nom" value={ nameSize } onChange={(e) => tailleNom(e.target.value)} className="in"></input><br/>
+                    {nameErr && <p className='texterreur'>Your Name is invalid</p>}
+                    <input type="text" placeholder="Votre Prénom" value={ surnameSize } onChange={(e) => tailleSurname(e.target.value)}className="in"></input><br/>
+                    {surnameErr && <p className='texterreur'>Your Name is invalid</p>}
+                    <input type="text" placeholder="Votre Téléphone" className="in"></input><br/>
+                    <input type="text" placeholder="Votre Mail" value={ email } onChange={(e) => setEmail(e.target.value)} className="in"></input><br/>
+                    {emailErr && <p className='texterreur'>Your email is invalid</p>}
+                    <input type="text" placeholder="Votre Mot de passe" className="in" value={ password } onChange={(e) => setPassword(e.target.value)}></input><br/>
+                    {pwdError && <p className='texterreur'>Your password is invalid</p>}
+                    <button type="button" onClick= { validate } className="in but">Inscription</button>
+
+                </form>
+            </div>
+        </>
+
     );
 };
 
